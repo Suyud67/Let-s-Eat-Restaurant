@@ -1,0 +1,30 @@
+{
+  "id": "restaurant-app",
+  "start_url": "./index.html",
+  "name": "Find Restaurant Lite",
+  "short_name": "Restaurant Lite",
+  "description": "Find favorite restaurant nearby",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#D84315",
+  "icons": [
+    {
+      "src": "./icons/icon3.webp",
+      "sizes": "75x75",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon2.webp",
+      "sizes": "130x130",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon1.webp",
+      "sizes": "220x220",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

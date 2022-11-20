@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .list-items {
+    padding: 1rem;
+    position: absolute;
+    flex-direction: column;
+    left: -100%;
+    gap: 20px;
+    top: 4.3rem;
+    background-color: #808080;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .list-items.active {
+    left: 0;
+  }
+
+  .link-item {
+    font-size: medium;
+  }
+
+  .container-hero {
+    background-attachment: scroll;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+  }
+
+  /* restaurants */
+  .cards-restaurant {
+    display: block;
+  }
+
+  /* detail restaurant */
+  .review-content {
+    width: 100%;
+  }
+
+  /* form review */
+  .form-review {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-review {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}

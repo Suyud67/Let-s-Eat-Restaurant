@@ -5,7 +5,7 @@ import { makeMenu, getReview } from '../../utils/destructur-data';
 const restaurantUI = (restaurant) => `
   <article class="card">
     <div class="img-card">
-      <img src="${CONFIG.IMG_URL}/${restaurant.pictureId}" alt="image restaurant" class="img-restaurant" />
+      <img data-src="${CONFIG.IMG_URL}/${restaurant.pictureId}" alt="image restaurant" class="lazyload img-restaurant " />
       <div class="desc-restaurant">
         <h4>${restaurant.rating} <i class="fa-solid fa-star" style="color: #ffff00"></i></h4>
         <h3>${restaurant.name}</h3>
@@ -32,7 +32,7 @@ const detailRestoUI = (resto, reviews = resto.customerReviews) => {
   return `
     <div class="detail-resto">
       <div class="img-card">
-        <img src="${CONFIG.IMG_URL}/${pictureId}" alt="image restaurant" class="img-restaurant" />
+        <img data-src="${CONFIG.IMG_URL}/${pictureId}" alt="image restaurant" class="lazyload img-restaurant" />
       </div>
       <div class="detail_desc-resto">
         <h2>${name}</h2>

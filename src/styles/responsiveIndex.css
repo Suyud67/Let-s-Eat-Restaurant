@@ -25,6 +25,7 @@
 
   .container-hero {
     background-attachment: scroll;
+    background-image: url('../public/images/heros/hero-image_small.webp');
   }
 
   .hamburger.active .bar:nth-child(1) {

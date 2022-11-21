@@ -4,42 +4,39 @@ import { itActsAsFavoriteRestoModel } from './contract/favRestoContract';
 
 let favoriteRestaurant = [];
 
-const FavoriteMovieArray = {
+const FavoriteRestaurant = {
   getResto(id) {
     if (!id) {
       return;
     }
 
     // eslint-disable-next-line consistent-return
-    return favoriteRestaurant.find((movie) => movie.id == id);
+    return favoriteRestaurant.find((resto) => resto.id == id);
   },
 
   getAllResto() {
     return favoriteRestaurant;
   },
 
-  updateResto(movie) {
-    if (!movie.hasOwnProperty('id')) {
+  updateResto(resto) {
+    if (!resto.hasOwnProperty('id')) {
       return;
     }
 
-    // pastikan id ini belum ada dalam daftar favoriteRestaurant
-    if (this.getResto(movie.id)) {
+    if (this.getResto(resto.id)) {
       return;
     }
 
-    favoriteRestaurant.push(movie);
+    favoriteRestaurant.push(resto);
   },
 
   deleteResto(id) {
-    // cara boros menghapus film dengan meng-copy film yang ada
-    // kecuali film dengan id == id
-    favoriteRestaurant = favoriteRestaurant.filter((movie) => movie.id != id);
+    favoriteRestaurant = favoriteRestaurant.filter((resto) => resto.id != id);
   },
 };
 
-describe('Favorite Movie Array Contract Test Implementation', () => {
+describe('Favorite Restaurant Array Contract Test Implementation', () => {
   afterEach(() => (favoriteRestaurant = []));
 
-  itActsAsFavoriteRestoModel(FavoriteMovieArray);
+  itActsAsFavoriteRestoModel(FavoriteRestaurant);
 });

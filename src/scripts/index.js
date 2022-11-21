@@ -1,6 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import 'regenerator-runtime';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 import '../styles/main.css';
 import '../styles/responsiveIndex.css';
+
 import App from './views/app';
 import swRegister from './utils/sw-register';
 

@@ -36,7 +36,7 @@ body {
   padding: 14px 5px;
   background-color: #bf1722;
   color: var(--font-primer);
-  z-index: 100;
+  z-index: 3;
 }
 .skip-link:focus {
   top: 0;
@@ -138,22 +138,18 @@ header {
   gap: 20px;
 }
 
-.img-card {
-  position: relative;
+.card {
+  border: 1px solid #1b212a;
+  border-radius: 14px 14px 0 0;
 }
 
 .img-restaurant {
   width: 100%;
+  border-radius: 14px 14px 0 0;
 }
 
 .desc-restaurant {
-  background-color: rgb(246, 246, 246, 60%);
   padding: 1rem;
-  border-radius: 14px 14px 0 0;
-  position: absolute;
-  width: 100%;
-  bottom: 1%;
-  left: 0;
   transition: all 0.3s ease-out;
 }
 

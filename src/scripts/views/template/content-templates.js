@@ -6,12 +6,12 @@ const restaurantUI = (restaurant) => `
   <article class="card">
     <div class="img-card">
       <img data-src="${CONFIG.IMG_URL}/${restaurant.pictureId}" alt="image restaurant" class="lazyload img-restaurant " />
-      <div class="desc-restaurant">
-        <h4>${restaurant.rating} <i class="fa-solid fa-star" style="color: #ffff00"></i></h4>
-        <h3>${restaurant.name}</h3>
-        <p>Position: ${restaurant.city}</p>
-        <a href="#/detail/${restaurant.id}" class="btnDetail">Detail Restaurant <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
+    </div>
+    <div class="desc-restaurant">
+      <h4>${restaurant.rating} <i class="fa-solid fa-star" style="color: #ffff00"></i></h4>
+      <h3>${restaurant.name}</h3>
+      <p>Position: ${restaurant.city}</p>
+      <a href="#/detail/${restaurant.id}" class="btnDetail">Detail Restaurant <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </article>
 `;
